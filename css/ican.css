@@ -1,132 +1,209 @@
 body {
-  padding-top: 50px;
-  text-align:center;
+	padding-top: 50px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
+
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+	padding: 40px 15px;
+	text-align: center;
 }
 
 .navbar {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .jumbotron {
-  padding:0px;
+	padding: 0px;
 }
 
 .hero {
-	background-image:url("../img/heroimage.jpg");
-  height:550px;
-  width:100%;
-  background-size:cover;
-  text-align: center;
-  color:black;
-  padding-top:150px;
-  margin-bottom:0px;
+	height: 550px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin-bottom: 0px;
+}
 
+.hero > div {
+	display: flex;
+	justify-content: center;
+	height: 100%;
 }
 
 .hero h1, h2  {
-	margin-bottom:0px;
-	margin-top:0px;
+	margin-top: 0px;
 	line-height: 0.8;
 }
 
 .herotext {
-	background-color:rgba(255,255,255,0.5);
-	padding:20px;
+	padding: 20px;
+	flex-direction: column;
+	background-size: cover;
+	color: white;
+	position: relative;
+	align-items: flex-start;
+	padding: 4em;
+}
 
+.herotext *:not(.bg-img) {
+	z-index: 2;
+}
+
+.herotext .bg-img {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-filter: saturate(150%) contrast(50%);
+}
+
+.herotext h1, .herotext h2 {
+	padding: 1.5rem;
+	background: rgba(136, 28, 28, .75);
 }
 
 .herobtn  {
-	margin-top:40px;
-	margin-bottom:20px;
-  font-size: 26px;
-  padding: 10px 20px;
-  
-  
-
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 26px;
+	padding: 10px 20px;
+	background: none;
+	border-color: black;
 }
 
 .connect  {
-  background-color: #222;
-  border-top:1px solid #080808;
-  text-align: center;
-  color:white;
-  font-size:3em;
-  padding:5px;
-  line-height:0;
+	background-color: #222;
+	border-top: 1px solid #080808;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	padding: 5px;
+	line-height: 0;
+	flex-direction: row;
+	align-items: center;
+}
+
+.connect > div {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.connect-icons {
+	flex-direction: column;
+}
+
+.connect-icons img {
+	width: 4em;
+	height: 4em;
+	margin: 12px;
+	filter: drop-shadow(0 0 1em black);
+	-webkit-filter: drop-shadow(0 0 1em black);
+}
+
+.connect-icons img:hover {
+	filter: drop-shadow(0 0 1em black) brightness(0.75);
+	-webkit-filter: drop-shadow(0 0 1em black) brightness(0.75);
+}
+
+.connect-cta {
+	margin-right: 1em;
 }
 
 .connect a  {
-  color:white;
+	color:white;
 }
 
 .connect a:hover {
-  color: #5cb85c;
+	color: #881c1c;
 }
 
-.about  {
-	text-align:center;
+.connect a:not(:last-child) {
+	margin-top: 0.5em;
+}
 
+.about {
+	text-align:center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.about .logo {
+	margin-bottom: 5rem;
+}
+
+.about p {
+	text-align: justify;
+}
+
+.about h1 {
+	padding-bottom:1em;
+	text-align: center;
+}
+
+.about a {
+	color: #881c1c;
+}
+
+.about .text {
+	max-width: 60em;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+.card {
+	width: 100%;
+	padding: 2em 4em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	margin-bottom: 2em;
+}
+
+.card h2 {
+	text-align: justify;
+	margin-bottom: .6em;
+}
+
+.card > .largeicon {
+	flex: 1;
+}
+
+.card > .card-text {
+	flex: 3;
+	max-width: 40em;
+}
+
+.card:nth-child(odd) h2 {
+	text-align: right;
 }
 
 .largeicon  {
-  font-size: 10em;
-  padding-top:10px;
-  line-height:0.6;
-  color: #5cb85c;
-
+	font-size: 10em;
+	margin: .3em 0;
+	line-height:0.6;
+	color: #881c1c;
+	text-align: center;
 }
 
-.about h2 {
-	padding:10px 0;
-
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 50px;
 }
 
-.getinvolved  {
-  text-align:center;
-  background-image:url("../img/ideawall.jpg");
-  width:100%;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding:0px;
-  
-}
-
-.transparent  {
-  background-color:rgba(170,186,191,0.8);
-  width:100%;
-  height:100%;
-  padding:0;
-  margin:0;
-
-}
-
-.datebox  {
-  border: 1px solid black;
-  height:150px;
-  width:150px;
-  padding:15px 0;
-  margin-bottom:50px;
-
-
-}
-
-.datebox h3  {
-  line-height: 0;
-
-}
-
-.bignumber  {
-  font-size: 6em;
-  line-height:0.9;
-
-}
-
-.eventdesc  {
-	text-align:left;
-
-}
