@@ -4,6 +4,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="img/icons-logo-old-style.png"/>
+		<meta property="og:title" content="iCAN - Icons Alumni Network"/>
+		<meta property="og:url" content="www.iconsalumni.org"/>
+		<meta property="og:site_name" content="iCAN - Icons Alumni Network"/>
+		<meta property="og:type" content="business"/>
+
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>iCons Alumni Network</title>
 
@@ -26,6 +32,7 @@
 
 
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="canonical" href="www.iconsalumni.org">
 
 	</head>
 	<body>
@@ -45,14 +52,13 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="#blog">Blog</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
 
-		<div class="jumbotron hero container-fluid">
+		<div class="jumbotron hero container-fluid clearfix">
 			<div class="col-md-7 herotext">
 				<img src="img/ny_skyline.jpg" class="bg-img" />
 				<h2>iCons alumni working together</h2>
@@ -64,49 +70,53 @@
 							<h1>Join the network</h1>
 				</div>
 				<div class="connect-icons">
-					<a href="#"><img class="connect-icon" src="img/facebook.svg"></a>
-					<a href="#"><img class="connect-icon" src="img/linkedin.svg"></a>
+					<a href="https://www.facebook.com/groups/iconsalumni/" target="_blank" rel="noopener"><img class="connect-icon" src="img/facebook.svg"></a>
+					<a href="https://www.linkedin.com/groups/7071749" target="_blank" rel="noopener"><img class="connect-icon" src="img/linkedin.svg"></a>
 				</div>
 			</div>
 		</div>
 		<a name="about"></a><br>
-		<div class="container about">
+		<div class="container">
+			<div class="row about">
 
-			<img src="img/icons-logo-old-style.png" class="logo" />
+				<img src="img/icons-logo-old-style.png" class="logo" />
 
-			<h1>We are ready to change the world.</h1>
-			<div class="text">
-				<p class="lead"><b>iCAN</b> is the professional and social network for graduates of <a href="http://icons.cns.umass.edu/" target="_blank" rel="noopener">iCons,</a> a next-generation of program of interdisciplinary science and engineering education. Armed with four years of training in critical thinking, scientific problem solving, and communication, our members are ready to take on the world's biggest challenges.</p>      
-			</div>
-			<br>
-			<div class="goals">
-				<div class="card professional">
-					<div class="largeicon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-					<div class="card-text">
+				<h1>We are ready to change the world.</h1>
+				<div class="text">
+					<p class="lead"><b>iCAN</b> is the professional and social network for graduates of <a href="http://icons.cns.umass.edu/" target="_blank" rel="noopener">iCons,</a> a next-generation program of interdisciplinary science and engineering education. Armed with four years of training in critical thinking, scientific problem solving, and communication, our members are ready to take on the world's biggest challenges.</p>      
+				</div>
+				<br>
+				<div class="row professional">
+					<div class="col-md-4 largeicon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+					<div class="col-md-8 card-text">
 						<h2>Professional Development</h2>
-						<p class="lead"><b>iCAN</b> members work in diverse industries, from biological research to clean energy to software development, and strive to be leaders in our fields. The primary function of iCAN is to foster the exchange of ideas, resources, and people between academic and industrial disciplines.</p>
+						<p class="lead"><b>iCAN</b> members work in diverse industries, from biological research to clean energy to software development, and strive to be leaders in these fields. The primary function of iCAN is to foster the exchange of ideas, resources, and people between academic and industrial disciplines.</p>
 					</div>
 				</div>
-				<div class="card social">
-					<div class="card-text">
+				<div class="row social">
+					<div class="col-md-4 largeicon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+					<div class="col-md-8 card-text">
 						<h2>Social Networking</h2>
 						<p class="lead">
-							<b>iCAN</b> works to bring our members together outside of work as well.
+						<b>iCAN</b> aims to bring our members together outside of work as well. We sponsor events, outings and gatherings that help us get to know each other.
 						</p>
 					</div>
-					<div class="largeicon"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
 				</div>
-				<div class="card community">
-					<div class="largeicon"><i class="fa fa-users" aria-hidden="true"></i></div>
-					<div class="card-text">
+				<div class="row community">
+					<div class="col-md-4 largeicon"><i class="fa fa-users" aria-hidden="true"></i></div>
+					<div class="col-md-8 card-text">
 						<h2>Community Service</h2>
 						<p class="lead">
-							Lorem ipsum...
+						<b>iCAN</b> is proud to give back to the community. The network organizes various service events, usually with a technical  or academic focus.
+							
 						</p>
 					</div>
 				</div>
+			</div>	
+			<a name="contact"></a>
+			<div class="footer navbar-inverse">
+				Questions? <a href="mailto:admin@iconsalumni.org">Contact us</a> | Copyright 2016 Icons Alumni Network Inc.
 			</div>
-			<div class="footer navbar-inverse">footer</div>
 
 			<!-- Bootstrap core JavaScript
 		 ================================================== -->
@@ -115,3 +125,4 @@
 		 <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
+

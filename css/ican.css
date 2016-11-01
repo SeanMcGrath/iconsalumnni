@@ -18,7 +18,7 @@ body {
 }
 
 .hero {
-	height: 550px;
+	min-height: 550px;
 	width: 100%;
 	text-align: center;
 	color: black;
@@ -28,12 +28,12 @@ body {
 .hero > div {
 	display: flex;
 	justify-content: center;
-	height: 100%;
+	height: 550px;
 }
 
 .hero h1, h2  {
 	margin-top: 0px;
-	line-height: 0.8;
+	line-height: 1.1;
 }
 
 .herotext {
@@ -63,6 +63,10 @@ body {
 .herotext h1, .herotext h2 {
 	padding: 1.5rem;
 	background: rgba(136, 28, 28, .75);
+}
+
+.herotext h1 {
+	margin-left: 1em;
 }
 
 .herobtn  {
@@ -97,8 +101,8 @@ body {
 }
 
 .connect-icons img {
-	width: 4em;
-	height: 4em;
+	width: 3em;
+	height: 3em;
 	margin: 12px;
 	filter: drop-shadow(0 0 1em black);
 	-webkit-filter: drop-shadow(0 0 1em black);
@@ -107,10 +111,15 @@ body {
 .connect-icons img:hover {
 	filter: drop-shadow(0 0 1em black) brightness(0.75);
 	-webkit-filter: drop-shadow(0 0 1em black) brightness(0.75);
+	transition: .2s;
 }
 
 .connect-cta {
 	margin-right: 1em;
+}
+
+.connect-cta h2 {
+	color: #9d9d9d;
 }
 
 .connect a  {
@@ -128,11 +137,13 @@ body {
 .about {
 	text-align:center;
 	padding-top: 5rem;
-	padding-bottom: 5rem;
+	max-width: 60em;
+	margin: auto;
 }
 
 .about .logo {
 	margin-bottom: 5rem;
+	max-width: 90%;
 }
 
 .about p {
@@ -148,38 +159,13 @@ body {
 	color: #881c1c;
 }
 
+.about > .row {
+	margin-bottom: 4em;
+}
+
 .about .text {
-	max-width: 60em;
 	margin: auto;
-	margin-bottom: 2em;
-}
-
-.card {
-	width: 100%;
-	padding: 2em 4em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-	margin-bottom: 2em;
-}
-
-.card h2 {
-	text-align: justify;
-	margin-bottom: .6em;
-}
-
-.card > .largeicon {
-	flex: 1;
-}
-
-.card > .card-text {
-	flex: 3;
-	max-width: 40em;
-}
-
-.card:nth-child(odd) h2 {
-	text-align: right;
+	margin-bottom: 5em;
 }
 
 .largeicon  {
@@ -190,6 +176,11 @@ body {
 	text-align: center;
 }
 
+.card-text h2 {
+	text-align: left;
+	margin-bottom: 1em;
+}
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -198,12 +189,43 @@ body {
 	/* Margin bottom by footer height */
 	margin-bottom: 60px;
 }
+
 .footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 50px;
+	min-height: 50px;
+	color: #9d9d9d;
+	line-height: 50px;
 }
 
+@media (max-width: 768px) {
+	.connect {
+		flex-direction: column;
+		padding: 1em 0;
+	}
+
+	.connect-cta {
+		margin: 0;
+	}
+
+	.connect-cta > * {
+		text-align: center;
+	}
+	
+	.connect-icons img {
+		height: 3em;
+		width: 3em;
+	}
+
+	.card-text h2 {
+		text-align: center;
+	}
+
+       .about > .text,
+       .about > .row {
+		margin-bottom: 0;
+	}
+}
