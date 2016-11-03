@@ -114,16 +114,41 @@ body {
 	transition: .2s;
 }
 
+.connect-icons a:after {
+	content: '';
+	width: 2em;
+	height: 2em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -90px;
+	top: -27px;
+	transform: rotate(23deg);
+	background-image: url('../img/share.svg');
+}
+
+.connect-icons a:last-child:after {
+	transform: rotate(-23deg) rotateX(180deg);
+	bottom: -30px;
+	top: initial;
+}
+
 .connect-cta {
 	margin-right: 1em;
 }
 
+.connect-cta h1 {
+	margin-bottom: 0;
+}
+
 .connect-cta h2 {
 	color: #9d9d9d;
+	margin-top: 0;
 }
 
 .connect a  {
 	color:white;
+	position: relative;
 }
 
 .connect a:hover {
@@ -220,6 +245,10 @@ body {
 		width: 3em;
 	}
 
+	.connect-icons a:after {
+		display: none;
+	}
+
 	.card-text h2 {
 		text-align: center;
 	}
@@ -227,5 +256,19 @@ body {
        .about > .text,
        .about > .row {
 		margin-bottom: 0;
+	}
+
+	body {
+		/* Margin bottom by footer height */
+		margin-bottom: 100px;
+	}
+
+	.herotext {
+		padding: 0;
+		max-height: 25em;
+	}
+
+	.herotext > h1 {
+		margin-left: 0;
 	}
 }
