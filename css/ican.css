@@ -206,6 +206,10 @@ body {
 	margin-bottom: 1em;
 }
 
+.row.donate {
+	margin-bottom: 2em;
+}
+
 html {
 	position: relative;
 	min-height: 100%;
